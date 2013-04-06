@@ -7,4 +7,8 @@ class DeadCell
       DeadCell
     end
   end
+
+  def self.status
+    :dead
+  end
 end

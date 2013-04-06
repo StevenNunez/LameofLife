@@ -12,4 +12,8 @@ describe LiveCell do
   it "dies with 3 neighbors" do 
     LiveCell.forecast(live_neighbors: 3).must_equal(DeadCell)
   end
+
+  it "reports its status" do 
+    LiveCell.status.must_equal(:live)
+  end
 end

@@ -7,4 +7,8 @@ class LiveCell
       DeadCell
     end
   end
+
+  def self.status
+    :live
+  end
 end

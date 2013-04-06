@@ -8,4 +8,8 @@ describe DeadCell do
     DeadCell.forecast(live_neighbors: 2).must_equal(DeadCell)
     DeadCell.forecast(live_neighbors: 3).must_equal(LiveCell)
   end
+
+  it "reports its status" do 
+    DeadCell.status.must_equal(:dead)
+  end
 end
