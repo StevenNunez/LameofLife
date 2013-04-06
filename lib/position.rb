@@ -12,11 +12,15 @@ class Position
     @next_cell = @current_cell.forecast(live_neighbors:live_neighbors)
   end
 
-  def next_cell
-    @next_cell 
+  def next_tenant_status
+    @next_cell.status 
   end
 
   def number
     @position_number
+  end
+
+  def switch!
+    @current_cell = @next_cell
   end
 end
