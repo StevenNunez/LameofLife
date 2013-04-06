@@ -6,7 +6,10 @@ describe LiveCell do
     LiveCell.forecast(live_neighbors: 0).must_equal(DeadCell)
     LiveCell.forecast(live_neighbors: 1).must_equal(DeadCell)
   end
-  it "lives with two live neighbours" do
+  it "lives with 2 live neighbours" do
     LiveCell.forecast(live_neighbors: 2).must_equal(LiveCell)
+  end
+  it "dies with 3 neighbors" do 
+    LiveCell.forecast(live_neighbors: 3).must_equal(DeadCell)
   end
 end
