@@ -10,7 +10,6 @@ require_relative 'lib/grid'
 positions = 20.times.map do 
   rand(2)
 end
-puts positions.class
 grid = Grid.new(*positions)
 generation_count = 1
 1.upto(10) do |gen|
