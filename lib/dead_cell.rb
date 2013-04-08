@@ -4,7 +4,7 @@ class DeadCell
     if live_neighbors == 3
       LiveCell
     else
-      DeadCell
+      self
     end
   end
 
